@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>SearchUser-ViewPage</title>
+<title>Search User</title>
 <%@include file="components/common_css_js.jsp"%>
 </head>
 <body>

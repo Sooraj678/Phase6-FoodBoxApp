@@ -18,7 +18,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Ordered-ViewPage</title>
+<title>Ordered Page</title>
 <%@include file="components/common_css_js.jsp"%>
 <link rel="stylesheet" href="css/welocmePage_aboutPage_userPage_ECommerce.css">
 <meta name="viewport" content="width=device-width, initial-sclae=1.0">
