@@ -43,10 +43,10 @@ User userNavbar =  (User) session.getAttribute("current-user");
 					href="register.jsp">Register </a></li>
 					
 				<li class="nav-item active"><a class="nav-link"
-					href="aboutUS.jsp">AboutUs </a></li>
+					href="aboutUS.jsp">About</a></li>
 					
 				<li class="nav-item active"><a class="nav-link"
-					href="contactUS.jsp">ContactUs </a></li>
+					href="contactUS.jsp">Contact</a></li>
 					
 			<%
 									}else{
@@ -59,10 +59,10 @@ User userNavbar =  (User) session.getAttribute("current-user");
 					href="LogoutCtl">Logout</a></li>
 					
 				<li class="nav-item active"><a class="nav-link"
-					href="aboutUS.jsp">AboutUs </a></li>
+					href="aboutUS.jsp">About</a></li>
 					
 				<li class="nav-item active"><a class="nav-link"
-					href="contactUS.jsp">ContactUs </a></li>
+					href="contactUS.jsp">Contact</a></li>
 			
 			<% 						
 										}

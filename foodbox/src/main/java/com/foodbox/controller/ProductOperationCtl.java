@@ -45,13 +45,13 @@ public class ProductOperationCtl extends HttpServlet {
 		try {
 			
 			/* With this Servlet we will take task of 2 servlet like: addCategoryServlet 
-			 * and addProductServlet */
+			 * and addProductServlet ...*/
 			
 			String op = request.getParameter("operation");
 			
 			if(op.trim().equals("addcategory")) {
 				
-				// add Category Servlet Task
+				//  add Category Servlet Task
 				// Fetching Category Data 
 				String title = request.getParameter("catTitle");
 				String description = request.getParameter("catDescription");

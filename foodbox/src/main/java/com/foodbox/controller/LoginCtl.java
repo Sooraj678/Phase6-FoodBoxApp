@@ -59,7 +59,7 @@ public class LoginCtl extends HttpServlet {
 					return;
 				}else {
 					//out.println("<h1>Welcome "+ user.getUserName()+" ...!! </h1>");
-					/* in this section we will redirect to two pages
+					/*  in this section we will redirect to two pages
 					 * 1. admin.jsp
 					 * 2. normalUserLogin.jsp
 			*Because, in this application we have two tyes of user- admin and normal User

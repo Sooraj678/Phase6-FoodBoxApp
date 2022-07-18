@@ -58,7 +58,7 @@ public class ContactUserCtl extends HttpServlet {
 			
 			int contactUserId = contactUserDao.saveContactUser(contactUser);
 			
-			 /*For displaying message properly at the VIEW Part */
+			 /* For displaying message properly at the VIEW Part */
 			 
 			 HttpSession httpSession =  request.getSession();
 			 httpSession.setAttribute("message", "Your Query Got Submitted Successfully: !!! Contacted User ID is: " +contactUserId);

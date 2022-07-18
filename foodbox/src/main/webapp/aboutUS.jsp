@@ -38,34 +38,34 @@
             <h2 style="color:blue;" >We have Best Category of Products as per User's Ratings</h2>
               <div class="skills">
                 <div class="skill">
-                  <div class="title">Sporty Shoes along with Normal Shoes</div>
+                  <div class="title">Biryani</div>
                   <div class="progress">
                     <div class="progress-bar p1"><span>90%</span></div>
                   </div>
                 </div>
 
                 <div class="skill">
-                  <div class="title">Laptops Category</div>
+                  <div class="title">Chinese</div>
                   <div class="progress">
                     <div class="progress-bar p2"><span>85%</span></div>
                   </div>
                 </div>
                 
                 <div class="skill">
-                  <div class="title">Mobiles Category</div>
+                  <div class="title">Home Style</div>
                   <div class="progress">
                     <div class="progress-bar p2"><span>79.30%</span></div>
                   </div>
                 </div>
                 <div class="skill">
-                  <div class="title">Kitchens-Things Category</div>
+                  <div class="title">Pizza</div>
                   <div class="progress">
                     <div class="progress-bar p2"><span>69%</span></div>
                   </div>
                 </div>
 
                 <div class="skill">
-                  <div class="title">Clothes Category</div>
+                  <div class="title">Bowl</div>
                   <div class="progress">
                     <div class="progress-bar p3"><span>65%</span></div>
                   </div>
