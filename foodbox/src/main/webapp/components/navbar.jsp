@@ -8,7 +8,7 @@ User userNavbar =  (User) session.getAttribute("current-user");
 %>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark custom-bg">
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
 	<div class="container">
 		<a class="navbar-brand" href="foodboxWelcome.jsp">Foodbox-App</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"

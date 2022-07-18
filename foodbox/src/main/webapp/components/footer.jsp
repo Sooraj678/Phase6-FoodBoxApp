@@ -1,9 +1,9 @@
 
 
-<div class="card text-center custom-bg mt-3">	
+<div class="card text-center bg-secondary mt-3">	
   		<div class="card-body">
-    			<p class="card-text">Owned By © 2022 Copyright:
-    			<a style="color:white;" href="eCommerceCartWelcome.jsp">Foodbox-App.com</a> Visit US on Our Online Delivery Application <a style="color:white;" href="aboutUS.jsp">About</a></p>
+    			<p class="card-text"><b>Owned By © 2022 Copyright:</b>
+    			<a style="color:white;" href="eCommerceCartWelcome.jsp">Foodbox-App.com</a> <b>Visit US on Our Online Delivery Application </b> <a style="color:white;" href="aboutUS.jsp">About</a></p>
     			
   		</div>
 </div>
