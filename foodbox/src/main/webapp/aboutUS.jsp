@@ -16,7 +16,7 @@
 <body>
       <div class="about-section">
         <div class="inner-width">
-          <h1 style="color:#673ab7!important"><b>About Foodbox</b></h1>
+          <h1 style="color:#673ab7!important"><b>About Foodbox Online Portal</b></h1>
           <div class="border"></div>
           <div class="about-section-row">
             <div class="about-section-col">

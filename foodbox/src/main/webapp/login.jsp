@@ -15,7 +15,7 @@
 			<div class="col-md-6 offset-md-4">
 			
 					<div class="card mt-3">
-						<div class="card-header custom-bg text-white">					
+						<div class="card-header bg-primary text-white">					
 						<h1>Login Here : </h1>
 						</div>
 						
@@ -36,11 +36,11 @@
 									placeholder="Password">
 							</div>
 							
-							<a href="register.jsp" class="text-center d-block mb-2">If not Registered click here</a>
+							<a href="register.jsp" class="text-center d-block mb-2">New User..!! Please Click Here</a>
 							
 							<div class="container text-center">
-								<button type="submit" class="btn btn-primary custom-bg border-0">Submit</button>
-								<button type="reset" class="btn btn-primary custom-bg border-0">ReSet</button>
+								<button type="submit" class="btn btn-primary bg-info border-0">Submit</button>
+								<button type="reset" class="btn btn-primary bg-info border-0">Reset</button>
 							</div>
 						</form>
 					</div>

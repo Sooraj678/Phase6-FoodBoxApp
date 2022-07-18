@@ -16,7 +16,7 @@
 <body>
       <div class="about-section">
         <div class="inner-width">
-          <h1 style="color:black!important"><b>Welcome to the ECommerce Cart Portal</b></h1>
+          <h1 style="color:black!important"><b>Welcome to the Foodbox Online Portal</b></h1>
           <div class="border"></div>
           <div class="about-section-row">
             <div class="about-section-col">
