@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>ECart-WelcomePage</title>
+<title>Foodbox-WelcomePage</title>
 
 <%@include file="components/common_css_js.jsp" %>
 <link rel="stylesheet" href="css/welocmePage_aboutPage_userPage_ECommerce.css">

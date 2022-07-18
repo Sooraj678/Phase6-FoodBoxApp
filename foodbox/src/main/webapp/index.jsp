@@ -11,7 +11,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>ECommerceHome-ViewPage</title>
+<title>Foodbox-ViewPage</title>
 <%@include file="components/common_css_js.jsp" %>
 
 </head>

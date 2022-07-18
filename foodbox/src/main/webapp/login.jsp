@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>UserLogin-ECommerceCart</title>
+<title>UserLogin-Foodbox</title>
 <%@include file="components/common_css_js.jsp"%>
 </head>
 <body>

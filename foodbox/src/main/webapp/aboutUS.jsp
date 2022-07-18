@@ -16,14 +16,20 @@
 <body>
       <div class="about-section">
         <div class="inner-width">
-          <h1 style="color:#673ab7!important"><b>ABOUT-US</b></h1>
+          <h1 style="color:#673ab7!important"><b>About Foodbox</b></h1>
           <div class="border"></div>
           <div class="about-section-row">
             <div class="about-section-col">
               <div class="about">
                 <p>
-                  This E-Commerce Cart  has a special category Sporty Shoes that is a module of company that manufactures and sells sports shoes along with other types of Shoes. 
-                  Previously we  have a walk-in store, and now, We wish to launch Our e-commerce portal for sportyshoes along with other category like Laptops, Mobiles, Clothes and Kitchens Module in our E-Cart .
+                  This Foodbox Application has a multiple category for
+							selecting and ordering food items. Previously we have a
+							restaurant chain, and now, We wish to launch Our Foodbox
+							Application, We found out that the online ordering of food items
+							with companies, such as Swiggy and Foodpanda were gaining more
+							profit by eliminating middle men from the equation. As a result,
+							the team decided to Launch an online food delivery web
+							application with a rich and user-friendly interface.
                 </p>
                 <a href="eCommerceCartWelcome.jsp" style="color:blue;">To Know More about US Please click here</a>
               </div>
