@@ -31,11 +31,11 @@
 							the team decided to Launch an online food delivery web
 							application with a rich and user-friendly interface.
                 </p>
-                <a href="eCommerceCartWelcome.jsp" style="color:blue;">To Know More about US Please click here</a>
+                <a href="foodboxWelcome.jsp" style="color:blue;">Know more about us..!!</a>
               </div>
             </div>
             <div class="about-section-col">
-            <h2 style="color:blue;" >We have Best Category of Products as per User's Ratings</h2>
+            <h2 style="color:blue;" >Products as per User's Ratings</h2>
               <div class="skills">
                 <div class="skill">
                   <div class="title">Biryani</div>

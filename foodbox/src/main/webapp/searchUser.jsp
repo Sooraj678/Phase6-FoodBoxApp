@@ -82,7 +82,7 @@
 	}
 	%>
 	<a href="admin.jsp" class="text-center d-block mb-2"><b>Redirect
-			to Admin-Home View Page</b></a>
+			to Admin Panel</b></a>
 	<!--For Accessing CheckOut Page from directly Cart only -->
 	<%@include file="components/common_modals.jsp"%>
 

@@ -379,7 +379,7 @@
 		aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
-				<div class="modal-header custom-bg text-white">
+				<div class="modal-header bg-info text-white">
 					<h5 class="modal-title" id="exampleModalLabel">Please fill the Details for Admin Password Change</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
@@ -393,20 +393,20 @@
 					<form action="UpdateAdminPasswordCtl" method="post">
 					
 						<div class="form-group">
-							<label for="email" style="color:#ff5722!important;"><b>Admin's Email-Id</b></label> 
+							<label for="email" style="color:black!important;"><b>Email-Id</b></label> 
 							<input name="admin_email" type="email"
 								class="form-control" id="email" aria-describedby="emailHelp"
-								placeholder="Enter admin Email-Id Here to update admin Password..!!">
+								placeholder="Enter admin Email-Id Here to update admin's Password..!!">
 						</div>
 						
 						<div class="form-group">
-							<label for="adminPasswordChange" style="color:#ff5722!important;"><b>Enter Admin New Password to be Update</b></label> 
+							<label for="adminPasswordChange" style="color:black!important;"><b>Password</b></label> 
 							<input name="admin_Newpassword"  type="password" class="form-control" id="password"
 								aria-describedby="emailHelp"
-								placeholder="Enter admin's new Password Here for updation..!!">
+								placeholder="Enter admin's new Password..!!">
 						</div>
 						<div class="container text-center">
-							<button class="btn btn-outline-success">Reset-AdminPassword</button>
+							<button class="btn btn-info">Update Password</button>
 							<button type="button" class="btn btn-secondary"
 							data-dismiss="modal">Close</button>
 						
@@ -432,8 +432,8 @@
 		aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
-				<div class="modal-header custom-bg text-white">
-					<h5 class="modal-title" id="exampleModalLabel">Showing User List</h5>
+				<div class="modal-header bg-info text-white">
+					<h5 class="modal-title" id="exampleModalLabel">Getting User List</h5>
 					
 					&#160;&#160;&#160;&#160;&#160;&#160;&#160;
 					&#160;&#160;&#160;&#160;&#160;&#160;&#160;
@@ -532,8 +532,8 @@
 		aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
-				<div class="modal-header custom-bg text-white">
-					<h5 class="modal-title" id="exampleModalLabel">Purchased-Report</h5>
+				<div class="modal-header bg-info text-white">
+					<h5 class="modal-title" id="exampleModalLabel">Purchase Report</h5>
 					&#160;&#160;&#160;&#160;&#160;&#160;&#160;
 					&#160;&#160;&#160;&#160;&#160;&#160;&#160;
 					&#160;&#160;&#160;&#160;&#160;&#160;&#160;
