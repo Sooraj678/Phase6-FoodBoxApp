@@ -36,20 +36,10 @@
             <div class="about-section-col">
             <%@include file="components/message.jsp" %>
               <div class="about">
-                <p>
-                  This Foodbox Application has a multiple category for
-							selecting and ordering food items. Previously we have a
-							restaurant chain, and now, We wish to launch Our Foodbox
-							Application, We found out that the online ordering of food items
-							with companies, such as Swiggy and Foodpanda were gaining more
-							profit by eliminating middle men from the equation. As a result,
-							the team decided to Launch an online food delivery web
-							application with a rich and user-friendly interface.
-                </p>
                 
               </div>
             <div class="card mt-2">
-            	<h6 style="color:blue;" ><b>We have Placed Your Order...Please remove selection of orders from your Cart....!!!</b></h6>
+            	<h6 style="color:blue;" ><b>Order Placed...Please remove items from your Cart...!!</b></h6>
             </div>
             </div>
             <div class="about-section-col">
@@ -57,14 +47,14 @@
             <div class="form-group">
             
             
-								<label for="EmailIdForOrders"><h4 style="color:red;"><b>Email-Id used for Orders...!!</b></h4> </label> 
+								<label for="EmailIdForOrders"><h4 style="color:black;"><b>Email-Id used for Orders...!!</b></h4> </label> 
 								<input name="email"  value ="<%=user.getUserEmail() %> " type="email" class="form-control" id="exampleInputEmail1"
 									aria-describedby="emailHelp" placeholder="Enter email">
 								<small id="emailHelp" class="form-text text-muted">We'll
 									never share your email with anyone else.</small>
 			</div>
 			<div class="about">
-            <a href="bill.jsp?emailId=<%=user.getUserEmail() %>" style="color:red;"><b>Click here to see Your Bill...!!!</b></a>
+            <a href="bill.jsp?emailId=<%=user.getUserEmail() %>" style="color:black;"><b>See Your Bill...!!</b></a>
              </div>
   
             </div>

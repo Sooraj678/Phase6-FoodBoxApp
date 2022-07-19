@@ -21,8 +21,9 @@
   				<div class="container text-center">
                           <img src="image/add-friend.png" style="max-width:100px;" class="img-fluid" alt="">
                      </div>
-                     
-					<h3 class="text-center my-3">Register Here...!!</h3>
+                     <div class="card-header bg-secondary text-white mt-3 mb-3">					
+						<h1>Register Here...!!</h1>
+						</div>
 		<form action="RegisterCtl" method="post">
 						<div class="form-group">
 							<label for="name" style="color:black!important;"><b>User Name</b></label> 

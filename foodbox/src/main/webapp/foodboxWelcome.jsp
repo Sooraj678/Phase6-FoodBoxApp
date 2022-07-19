@@ -29,7 +29,7 @@
 							profit by eliminating middle men from the equation. As a result,
 							the team decided to Launch an online food delivery web
 							application with a rich and user-friendly interface.</p>
-                <a href="index.jsp" style="color:blue;"><b>To Shop with US Please click here</b></a>
+                <a href="index.jsp" style="color:blue;"><b>For online Food Delivery Please visit here...!!</b></a>
               </div>
             </div>         
           </div>

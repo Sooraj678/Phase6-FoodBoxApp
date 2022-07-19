@@ -21,9 +21,9 @@
   				<div class="container text-center">
                           <img src="image/contactUs.jpg" style="max-width:100px;" class="img-fluid" alt="">
                      </div>
-                     
-					<h3 class="text-center my-3" style="color:#673ab7!important; "><b>Any Query...!!</b></h3>
-					
+                     <div class="card-header bg-secondary text-white mt-3 mb-3">					
+						<h1>Any Query...!!</h1>
+						</div>				
 		<form action="ContactUserCtl" method="post">
 						<div class="form-group">
 							<label for="name" style="color:black;"><b>Name</b></label> 
@@ -60,7 +60,7 @@
 						</div>
 
 						<div class="container text-center">
-							<button class="btn btn-outline-success">Please submit your issues...!!</button>
+							<button class="btn btn-info">Please submit your issues...!!</button>
 							<a href="login.jsp" class="text-right d-block mb-2"> <h6 style="color:blue;">Login Page</h6> </a>
 						</div>
 

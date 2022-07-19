@@ -74,17 +74,19 @@
 
 
 							<div class="form-group">
-							 <label for="Category"><b>Select Purchase Category</b></label><br>
+							 <label for="Category"><b>Select Food Category for Delivery...!!</b></label><br>
 								<select name="purchaseCategory" required>
-									<option selected>Choose...</option>
-									<option value="Laptops">Puchase Category is: Laptops</option>
-									<option value="Mobiles">Puchase Category is: Mobiles</option>
-									<option value="Clothes">Puchase Category is: Clothes</option>
-									<option value="Shoes">Puchase Category is: Shoes</option>
-									<option value="KitchensThing">Puchase Category is:
-										Kitchen</option>
-									<option value="SportyShoes">Puchase Category is:
-										SportyShoes</option>
+									<option selected>Choose Food Category...!!</option>
+									<option value="Biryani">Biryani</option>
+									<option value="Chicken">Chicken</option>
+									<option value="Pizza">Pizza</option>
+									<option value="Bowl">Bowl</option>
+									<option value="Paratha">Paratha</option>
+									<option value="Home Style">Home Style</option>
+									<option value="Desi Chai">Desi Chai</option>
+									<option value="Chinese">Chinese</option>
+									<option value="Indian Roti">Indian Roti</option>
+									<option value="Rice">Rice</option>
 								</select>
 							</div>
 							
@@ -115,10 +117,11 @@
                                 <div class="container text-center">
                                   
                                   
-                                  <button class="btn btn-outline-success">Order Now</button> 
+                                  <button class="btn btn-info">Order Now</button> 
                                    <!-- <button class="btn btn-outline-primary">Continue Shopping With US</button> -->  
-									<a href="eCommerceCartWelcome.jsp" class="text-center d-block mb-2"><h4 style="color:blue;"> Continue Shopping With US </h4> </a>  
-	                              
+									<div class="container text-center mt-3">
+									<a href="foodboxWelcome.jsp" class="text-center d-block mb-2"><h5 style="color:blue;">Explore Our Food..!!!</h5> </a>  
+	                              	</div>
                                 </div>
 
                             </form>    
