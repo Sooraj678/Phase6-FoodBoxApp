@@ -1,37 +1,36 @@
+
 <%
+	User user = (User) session.getAttribute("current-user");
+System.out.println("User Session is :" + user);
+if (user == null) {
 
-    User user = (User) session.getAttribute("current-user");
-	System.out.println("User Session is :"+ user);
-    if (user == null) {
+	session.setAttribute("message", "You are not logged in !! Login first to access Checkout page");
+	response.sendRedirect("login.jsp");
+	return;
 
-        session.setAttribute("message", "You are not logged in !! Login first to access Checkout page");
-        response.sendRedirect("login.jsp");
-        return;
-
-    }
-
+}
 %>
 
 <%@page import="com.foodbox.helper.DbConnectionProvider"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Bill Page</title>
-<%@include file="components/common_css_js.jsp" %>
+<%@include file="components/common_css_js.jsp"%>
 </head>
-<%@include file="components/navbar.jsp" %>
+<%@include file="components/navbar.jsp"%>
 <body>
 
-<form action="" method="">
-	<div class="row">
-	<%@include file="components/message.jsp" %>
-		<div class="col-md-12">
+	<form action="" method="">
+		<div class="row">
+			<%@include file="components/message.jsp"%>
+			<div class="col-md-12">
 
-			<div class="card mt-3 mb-3">
+				<div class="card mt-3 mb-3">
 
 
 					<table class="table table-bordered">
@@ -51,15 +50,15 @@
 						</thead>
 						<tbody>
 							<%
-									try {
-									
-									String userEmail = request.getParameter("emailId");
-									System.out.println("coming Id for Bill Print is: " + userEmail);
-									Connection con = DbConnectionProvider.getCon();
-									Statement stmt = con.createStatement();
-									ResultSet rs = stmt.executeQuery("select *from purchasedrecord where purchase_UserEmail = '"+userEmail+"'");
-									while (rs.next()) {
-								%>
+								try {
+
+								String userEmail = request.getParameter("emailId");
+								System.out.println("coming Id for Bill Print is: " + userEmail);
+								Connection con = DbConnectionProvider.getCon();
+								Statement stmt = con.createStatement();
+								ResultSet rs = stmt.executeQuery("select *from purchasedrecord where purchase_UserEmail = '" + userEmail + "'");
+								while (rs.next()) {
+							%>
 							<tr>
 
 								<td><%=rs.getString(2)%></td>
@@ -75,41 +74,41 @@
 							</tr>
 
 							<%
-									}
-
-								} catch (Exception e) {
-									System.out.println(e);
 								}
-								%>
+
+							} catch (Exception e) {
+								System.out.println(e);
+							}
+							%>
 						</tbody>
 
 
 					</table>
-					<label for="EmailIdForOrders"><h4 style="color:black;">
+					<label for="EmailIdForOrders"><h4 style="color: black;">
 							<b>Invoice will be send on this E-mail Id:</b>
-						</h4> </label> <input name="email" value ="<%=user.getUserEmail() %>" type="email"
-						class="form-control" id="exampleInputEmail1"
-						aria-describedby="emailHelp" placeholder="Enter Email to save bill as Pdf"> <small
-						id="emailHelp" class="form-text text-muted">We'll never
-						share your email with anyone else.</small>
+						</h4> </label> <input name="email" value="<%=user.getUserEmail()%>"
+						type="email" class="form-control" id="exampleInputEmail1"
+						aria-describedby="emailHelp"
+						placeholder="Enter Email to save bill as Pdf">
 
 
-					<div class="container text-center">
-						<a href="paymentBill.jsp"><h5>Pay Your Bill...!!</h5></a>
+					<div class="container text-center card-header bg-info">
+						<a href="payBill.jsp"><h5 style="color: black">Pay Your
+								Bill...!!</h5></a>
 
 					</div>
 				</div>
-	</div>
-	
-</div>
-</form>
+			</div>
+
+		</div>
+	</form>
 
 
-<!--For Accessing CheckOut Page from directly Cart only -->
-<%@include  file="components/common_modals.jsp" %>
+	<!--For Accessing CheckOut Page from directly Cart only -->
+	<%@include file="components/common_modals.jsp"%>
 
 
 
 </body>
-<%@include file="components/footer.jsp" %>
+<%@include file="components/footer.jsp"%>
 </html>
