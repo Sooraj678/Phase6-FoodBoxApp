@@ -20,7 +20,7 @@ User userNavbar =  (User) session.getAttribute("current-user");
 		
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="index.jsp">Home
+				<li class="nav-item active"><a class="nav-link" href="index.jsp"><b>Home</b>
 						<span class="sr-only">(current)</span>
 				</a></li>
 
@@ -37,32 +37,32 @@ User userNavbar =  (User) session.getAttribute("current-user");
 			%>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="login.jsp">Login </a></li>
+					href="login.jsp"><b>Login </b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="register.jsp">Register </a></li>
+					href="register.jsp"><b>Register</b> </a></li>
 					
 				<li class="nav-item active"><a class="nav-link"
-					href="aboutUS.jsp">About</a></li>
+					href="aboutUS.jsp"><b>About</b></a></li>
 					
 				<li class="nav-item active"><a class="nav-link"
-					href="contactUS.jsp">Contact</a></li>
+					href="contactUS.jsp"><b>Contact</b></a></li>
 					
 			<%
 									}else{
 										
 			%>
 				<li class="nav-item active"><a class="nav-link"
-					href="<%=userNavbar.getUserType().equals("admin") ? "admin.jsp" : "normalUser.jsp"%>"> <%=userNavbar.getUserName() %> </a></li>
+					href="<%=userNavbar.getUserType().equals("admin") ? "admin.jsp" : "normalUser.jsp"%>"> <b> <%=userNavbar.getUserName() %> </b> </a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="LogoutCtl">Logout</a></li>
+					href="LogoutCtl"><b>Logout</b></a></li>
 					
 				<li class="nav-item active"><a class="nav-link"
-					href="aboutUS.jsp">About</a></li>
+					href="aboutUS.jsp"><b>About</b></a></li>
 					
 				<li class="nav-item active"><a class="nav-link"
-					href="contactUS.jsp">Contact</a></li>
+					href="contactUS.jsp"><b>Contact</b></a></li>
 			
 			<% 						
 										}

@@ -234,7 +234,7 @@
 		aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
-				<div class="modal-header custom-bg text-white">
+				<div class="modal-header bg-info text-white">
 					<h5 class="modal-title" id="exampleModalLabel">Please fill the Category Details</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
@@ -256,7 +256,7 @@
 						
 						</div>
 						<div class="container text-center">
-							<button class="btn btn-outline-success">Add Category</button>
+							<button class="btn btn-info">Add Category</button>
 							<button type="button" class="btn btn-secondary"
 							data-dismiss="modal">Close</button>
 						
@@ -280,7 +280,7 @@
 <div class="modal fade" id="add-product-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-info text-white">
         <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -347,7 +347,7 @@
         
          <!-- Submit Button -->
          <div class="container text-center">
-         	<button class="btn btn-outline-success">Add Product</button>
+         	<button class="btn btn-info">Add Product</button>
          
          </div>
         
