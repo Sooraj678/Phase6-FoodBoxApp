@@ -61,13 +61,13 @@ public class CheckoutOrderedCtl extends HttpServlet {
 		
 		record.setPurchase_TotalAmount(request.getParameter("totalAmount"));
 		
-		String puchase_DeliveryStatus = "Processing";
+		String purchase_DeliveryStatus = "Processing";
 		
-		record.setPurchase_DeliveryStatus(puchase_DeliveryStatus);
+		record.setPurchase_DeliveryStatus(purchase_DeliveryStatus);
 		
-		String puchase_ExpectedDaysForDelivery = "15 Days Maximum";
+		String purchase_ExpectedMinutesForDelivery = "39-Minutes Max";
 		
-		record.setPuchase_ExpectedDaysForDelivery(puchase_ExpectedDaysForDelivery);
+		record.setPurchase_ExpectedMinutesForDelivery(purchase_ExpectedMinutesForDelivery);
 		
 		
 		

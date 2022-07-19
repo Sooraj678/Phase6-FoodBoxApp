@@ -26,7 +26,7 @@
 <%@include file="components/navbar.jsp" %>
 <body>
 
-<form action="PrintBillCtl" method="post">
+<form action="" method="">
 	<div class="row">
 	<%@include file="components/message.jsp" %>
 		<div class="col-md-12">
@@ -46,7 +46,7 @@
 								<th scope="col">DeliveryStatus</th>
 								<th scope="col">ModeOfPayment</th>
 								<th scope="col">TotalAmount</th>
-								<th scope="col">DaysForDelivery</th>
+								<th scope="col">MaxMinutesForDelivery</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -85,8 +85,8 @@
 
 
 					</table>
-					<label for="EmailIdForOrders"><h4 style="color:blue;">
-							<b>Email-Id to save your Order Bill as Pdf is....!!! </b>
+					<label for="EmailIdForOrders"><h4 style="color:black;">
+							<b>Invoice will be send on this E-mail Id:</b>
 						</h4> </label> <input name="email" value ="<%=user.getUserEmail() %>" type="email"
 						class="form-control" id="exampleInputEmail1"
 						aria-describedby="emailHelp" placeholder="Enter Email to save bill as Pdf"> <small
@@ -95,11 +95,10 @@
 
 
 					<div class="container text-center">
-	<label for="Print-YourBill"><h3 style="color: red;">Save Your Bill as Pdf File...!!! </h3></label> <br>
-		<button type="submit" class="btn btn-primary border-0">Save as Pdf File</button>
-	
-	</div>
-			</div>
+						<a href="paymentBill.jsp"><h5>Pay Your Bill...!!</h5></a>
+
+					</div>
+				</div>
 	</div>
 	
 </div>

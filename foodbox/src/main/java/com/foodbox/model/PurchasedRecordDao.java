@@ -44,7 +44,7 @@ public class PurchasedRecordDao {
 	      stmt.setString(8,  record.getPurchase_DeliveryStatus());
 	      stmt.setString(9,  record.getPurchase_PaymentMode());
 	      stmt.setString(10, record.getPurchase_TotalAmount());
-	      stmt.setString(11, record.getPuchase_ExpectedDaysForDelivery());
+	      stmt.setString(11, record.getPurchase_ExpectedMinutesForDelivery());
 	        
 	      i =     stmt.executeUpdate();
 	      
