@@ -20,7 +20,7 @@
 <meta charset="ISO-8859-1">
 <title>Ordered Page</title>
 <%@include file="components/common_css_js.jsp"%>
-<link rel="stylesheet" href="css/welocmePage_aboutPage_userPage_ECommerce.css">
+<link rel="stylesheet" href="css/welocmePage_aboutPage_userPage_Foodbox.css">
 <meta name="viewport" content="width=device-width, initial-sclae=1.0">
 </head>
 <body>
@@ -37,8 +37,14 @@
             <%@include file="components/message.jsp" %>
               <div class="about">
                 <p>
-                  This E-Commerce Cart  has a special category Sporty Shoes that is a module of company that manufactures and sells sports shoes along with other types of Shoes. 
-                  Previously we  have a walk-in store, and now, We wish to launch Our e-commerce portal for sportyshoes along with other category like Laptops, Mobiles, Clothes and Kitchens Module in our E-Cart .
+                  This Foodbox Application has a multiple category for
+							selecting and ordering food items. Previously we have a
+							restaurant chain, and now, We wish to launch Our Foodbox
+							Application, We found out that the online ordering of food items
+							with companies, such as Swiggy and Foodpanda were gaining more
+							profit by eliminating middle men from the equation. As a result,
+							the team decided to Launch an online food delivery web
+							application with a rich and user-friendly interface.
                 </p>
                 
               </div>
@@ -51,7 +57,7 @@
             <div class="form-group">
             
             
-								<label for="EmailIdForOrders"><h4 style="color:red;"><b>This Email-Id has been used for Yours' Orders....!!! </b></h4> </label> 
+								<label for="EmailIdForOrders"><h4 style="color:red;"><b>Email-Id used for Orders...!!</b></h4> </label> 
 								<input name="email"  value ="<%=user.getUserEmail() %> " type="email" class="form-control" id="exampleInputEmail1"
 									aria-describedby="emailHelp" placeholder="Enter email">
 								<small id="emailHelp" class="form-text text-muted">We'll
@@ -60,46 +66,7 @@
 			<div class="about">
             <a href="bill.jsp?emailId=<%=user.getUserEmail() %>" style="color:red;"><b>Click here to see Your Bill...!!!</b></a>
              </div>
-            
-            
-            <div class="card mt-2">
-            <h6 style="color:#673ab7!important;" ><b>We have Best Category of Products as per User's Ratings</b></h6>
-              </div>
-              <div class="skills">
-                <div class="skill">
-                  <div class="title">Sporty Shoes along with Normal Shoes</div>
-                  <div class="progress">
-                    <div class="progress-bar p1"><span>90%</span></div>
-                  </div>
-                </div>
-
-                <div class="skill">
-                  <div class="title">Laptops Category</div>
-                  <div class="progress">
-                    <div class="progress-bar p2"><span>85%</span></div>
-                  </div>
-                </div>
-                
-                <div class="skill">
-                  <div class="title">Mobiles Category</div>
-                  <div class="progress">
-                    <div class="progress-bar p2"><span>79.30%</span></div>
-                  </div>
-                </div>
-                <div class="skill">
-                  <div class="title">Kitchens-Things Category</div>
-                  <div class="progress">
-                    <div class="progress-bar p2"><span>69%</span></div>
-                  </div>
-                </div>
-
-                <div class="skill">
-                  <div class="title">Clothes Category</div>
-                  <div class="progress">
-                    <div class="progress-bar p3"><span>65%</span></div>
-                  </div>
-                </div>
-              </div>
+  
             </div>
           </div>
         </div>
