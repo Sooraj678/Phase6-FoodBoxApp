@@ -59,7 +59,7 @@
 						</div>
 
 						<div class="container text-center">
-							<button class="btn btn-outline-success">Register Here</button>
+							<button class="btn btn-info">Register Here</button>
 							<a href="login.jsp" class="text-right d-block mb-2"> <h6 style="color:blue;">Login Page </h6> </a>
 						</div>
 
