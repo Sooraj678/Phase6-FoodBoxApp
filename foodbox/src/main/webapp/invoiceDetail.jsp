@@ -42,7 +42,67 @@ if (user == null) {
             </div>         
           </div>
         </div>
-      </div>
+      </div> <div class="container">
+            <h2 style="color:blue;" >Your Orders ...!!</h2>
+<div class="col-md-12">
+
+				<div class="card mt-3 mb-3">
+
+
+					<table class="table table-info">
+						<thead>
+							<tr>
+								<th scope="col">Name</th>
+								<th scope="col">Email</th>
+								<th scope="col">Contact</th>
+								<th scope="col">Address</th>
+								<th scope="col">DeliveryDate</th>
+								<th scope="col">Category</th>
+								<th scope="col">DeliveryStatus</th>
+								<th scope="col">Payment</th>
+								<th scope="col">Amount</th>
+								<th scope="col">Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							<%
+								try {
+
+								String userEmail = request.getParameter("emailId");
+								System.out.println("coming Id for Bill Print is: " + userEmail);
+								Connection con = DbConnectionProvider.getCon();
+								Statement stmt = con.createStatement();
+								ResultSet rs = stmt.executeQuery("select *from purchasedrecord where purchase_UserEmail = '" + userEmail + "'");
+								while (rs.next()) {
+							%>
+							<tr>
+
+								<td><%=rs.getString(2)%></td>
+								<td><%=rs.getString(3)%></td>
+								<td><%=rs.getString(4)%></td>
+								<td><%=rs.getString(5)%></td>
+								<td><%=rs.getString(6)%></td>
+								<td><%=rs.getString(7)%></td>
+								<td><%=rs.getString(8)%></td>
+								<td><%=rs.getString(9)%></td>
+								<td><%=rs.getString(10)%></td>
+								<td><%=rs.getString(11)%></td>
+							</tr>
+
+							<%
+								}
+
+							} catch (Exception e) {
+								System.out.println(e);
+							}
+							%>
+						</tbody>
+
+
+					</table>
+            </div>
+            </div>
+             </div>
       <!--For Accessing CheckOut Page from directly Cart only -->
 <%@include  file="components/common_modals.jsp" %>
 </body>

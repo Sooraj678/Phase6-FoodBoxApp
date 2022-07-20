@@ -73,6 +73,12 @@ if (user == null) {
 									class="form-control" id="name" aria-describedby="nameHelp"
 									placeholder="Enter Card Holder Name Here..!!">
 							</div>
+							<div class="form-group">
+								<label for="name" style="color: black !important;"><b>Email Id:</b></label> <br>
+										<input name="emailId" type="email" value="<%=user.getUserEmail()%>"
+									class="form-control" id="name" aria-describedby="nameHelp"
+									placeholder="Enter Card Holder Name Here..!!">
+							</div>
 
 							<div class="form-group">
 								<label for="phone" style="color: black !important;"><b>Amount to be Paid:</b>

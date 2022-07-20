@@ -35,7 +35,7 @@
               </div>
             </div>
             <div class="about-section-col">
-            <h2 style="color:blue;" >Products as per User's Ratings</h2>
+            <h2 style="color:blue;" >Food Category on the basis of Users' Ratings</h2>
               <div class="skills">
                 <div class="skill">
                   <div class="title">Biryani</div>
