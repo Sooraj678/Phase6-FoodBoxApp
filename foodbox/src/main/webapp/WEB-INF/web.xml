@@ -46,6 +46,12 @@
   	<description></description>
   	<servlet-class>com.foodbox.controller.CheckoutOrderedCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DeleteOrdersCtl</servlet-name>
+  	<display-name>DeleteOrdersCtl</display-name>
+  	<description></description>
+  	<servlet-class>com.foodbox.controller.DeleteOrdersCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>RegisterCtl</servlet-name>
   	<url-pattern>/RegisterCtl</url-pattern>
@@ -73,5 +79,9 @@
   <servlet-mapping>
   	<servlet-name>CheckoutOrderedCtl</servlet-name>
   	<url-pattern>/CheckoutOrderedCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteOrdersCtl</servlet-name>
+  	<url-pattern>/DeleteOrdersCtl</url-pattern>
   </servlet-mapping>
 </web-app>

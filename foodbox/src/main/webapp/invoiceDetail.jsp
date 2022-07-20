@@ -43,7 +43,10 @@ if (user == null) {
           </div>
         </div>
       </div> <div class="container">
-            <h2 style="color:blue;" >Your Orders ...!!</h2>
+      			<div class="card-header bg-secondary text-white">					
+						<h1>Your Orders ...!! </h1>
+						</div>
+
 <div class="col-md-12">
 
 				<div class="card mt-3 mb-3">
@@ -103,6 +106,14 @@ if (user == null) {
             </div>
             </div>
              </div>
+            
+            
+            <div class="container">
+            <div class="card-header bg-info text-white">					
+						<a href="DeleteOrdersCtl?userEmail=<%=user.getUserEmail()%>"> <h4> <b style="color:white;">Click Here to Clear Your Orders </b> </h4> </a>
+						</div>
+            
+            </div>
       <!--For Accessing CheckOut Page from directly Cart only -->
 <%@include  file="components/common_modals.jsp" %>
 </body>
