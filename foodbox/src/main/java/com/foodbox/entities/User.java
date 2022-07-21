@@ -8,30 +8,30 @@ import javax.persistence.Id;
 
 @Entity
 public class User {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(length = 10, name = "user_id")
 	private int userId;
-	
+
 	@Column(length = 100, name = "user_name")
 	private String userName;
-	
+
 	@Column(length = 100, name = "user_email")
 	private String userEmail;
-	
+
 	@Column(length = 100, name = "user_password")
 	private String userPassword;
-	
+
 	@Column(length = 12, name = "user_phone")
 	private String userPhone;
-	
+
 	@Column(length = 1500, name = "user_pic")
 	private String userPic;
-	
+
 	@Column(length = 1500, name = "user_address")
 	private String userAddress;
-	
+
 	@Column(name = "user_type")
 	private String userType;
 
@@ -120,7 +120,6 @@ public class User {
 		this.userAddress = userAddress;
 	}
 
-	
 	public String getUserType() {
 		return userType;
 	}
@@ -135,7 +134,5 @@ public class User {
 				+ userPassword + ", userPhone=" + userPhone + ", userPic=" + userPic + ", userAddress=" + userAddress
 				+ ", userType=" + userType + "]";
 	}
-	
-	
-	
+
 }

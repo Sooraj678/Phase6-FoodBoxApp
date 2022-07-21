@@ -9,25 +9,25 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Product {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int pId;
-	
+
 	private String pName;
 	@Column(length = 3000)
-	
+
 	private String pDesc;
 	private String pPhoto;
 	private int pPrice;
 	private int pDiscount;
 	private int pQuantity;
-	
+
 	@ManyToOne
 	private Category category;
-	
+
 	public Product() {
-		
+
 	}
 
 	public Product(String pName, String pDesc, String pPhoto, int pPrice, int pDiscount, int pQuantity,
@@ -111,18 +111,14 @@ public class Product {
 		return "Product [pId=" + pId + ", pName=" + pName + ", pDesc=" + pDesc + ", pPhoto=" + pPhoto + ", pPrice="
 				+ pPrice + ", pDiscount=" + pDiscount + ", pQuantity=" + pQuantity + ", category=" + category + "]";
 	}
-	
-	
-	//Calculate price after discount
-	public int getPriceAfterApplyingDiscount() {
-		
-		int d =(int) ((this.getpDiscount()/100.0)*this.getpPrice());
-		
-		return (this.getpPrice()-d);
-		
-	}
-	
-	
-	
-}
 
+	// Calculate price after discount
+	public int getPriceAfterApplyingDiscount() {
+
+		int d = (int) ((this.getpDiscount() / 100.0) * this.getpPrice());
+
+		return (this.getpPrice() - d);
+
+	}
+
+}

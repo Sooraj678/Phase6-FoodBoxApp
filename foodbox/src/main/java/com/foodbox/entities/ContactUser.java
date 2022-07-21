@@ -13,19 +13,19 @@ public class ContactUser {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(length = 10, name = "contactUser_id")
 	private int contactUserId;
-	
+
 	@Column(length = 100, name = "contactUser_name")
 	private String userName;
-	
+
 	@Column(length = 100, name = "contactUser_email")
 	private String userEmail;
-	
+
 	@Column(length = 12, name = "contactUser_phone")
 	private String userPhone;
-	
+
 	@Column(length = 100, name = "contactUser_subject")
 	private String userSubject;
-	
+
 	@Column(length = 1500, name = "contactUser_query")
 	private String userQuery;
 
@@ -105,8 +105,5 @@ public class ContactUser {
 		return "ContactUser [contactUserId=" + contactUserId + ", userName=" + userName + ", userEmail=" + userEmail
 				+ ", userPhone=" + userPhone + ", userSubject=" + userSubject + ", userQuery=" + userQuery + "]";
 	}
-	
-	
-	
-}
 
+}

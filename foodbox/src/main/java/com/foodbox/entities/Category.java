@@ -11,19 +11,21 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Category {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int categoryId;
-	
-	/* Here Column name of Category table will be same , hence no need to change column 
-	 * name like previously for User entity we have done*/
+
+	/*
+	 * Here Column name of Category table will be same , hence no need to change
+	 * column name like previously for User entity we have done
+	 */
 	private String categoryTitle;
 	private String categoryDescription;
-	
+
 	@OneToMany(mappedBy = "category")
 	private List<Product> products = new ArrayList<>();
-	
+
 	public Category(int categoryId, String categoryTitle, String categoryDescription) {
 		this.categoryId = categoryId;
 		this.categoryTitle = categoryTitle;
@@ -31,14 +33,14 @@ public class Category {
 	}
 
 	public Category(String categoryTitle, String categoryDescription, List<Product> products) {
-		
+
 		this.categoryTitle = categoryTitle;
 		this.categoryDescription = categoryDescription;
 		this.products = products;
 	}
 
 	public Category() {
-		
+
 	}
 
 	public int getCategoryId() {
@@ -78,6 +80,5 @@ public class Category {
 		return "Category [categoryId=" + categoryId + ", categoryTitle=" + categoryTitle + ", categoryDescription="
 				+ categoryDescription + "]";
 	}
-		
 
 }
