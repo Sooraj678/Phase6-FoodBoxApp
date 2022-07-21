@@ -30,7 +30,7 @@ if (user == null) {
 <body>
 	<div class="about-section">
 		<div class="inner-width">
-		<%@include file="components/message.jsp" %>
+			<%@include file="components/message.jsp"%>
 			<h1 style="color: black !important">
 				<b>Payment Page</b>
 			</h1>
@@ -76,15 +76,15 @@ if (user == null) {
 					</thead>
 					<tbody>
 						<%
-								try {
+							try {
 
-								String userEmail = request.getParameter("emailId");
-								System.out.println("coming Id for Bill Print is: " + userEmail);
-								Connection con = DbConnectionProvider.getCon();
-								Statement stmt = con.createStatement();
-								ResultSet rs = stmt.executeQuery("select *from purchasedrecord where purchase_UserEmail = '" + userEmail + "'");
-								while (rs.next()) {
-							%>
+							String userEmail = request.getParameter("emailId");
+							System.out.println("coming Id for Bill Print is: " + userEmail);
+							Connection con = DbConnectionProvider.getCon();
+							Statement stmt = con.createStatement();
+							ResultSet rs = stmt.executeQuery("select *from purchasedrecord where purchase_UserEmail = '" + userEmail + "'");
+							while (rs.next()) {
+						%>
 						<tr>
 
 							<td><%=rs.getString(2)%></td>
@@ -100,12 +100,12 @@ if (user == null) {
 						</tr>
 
 						<%
-								}
-
-							} catch (Exception e) {
-								System.out.println(e);
 							}
-							%>
+
+						} catch (Exception e) {
+							System.out.println(e);
+						}
+						%>
 					</tbody>
 
 

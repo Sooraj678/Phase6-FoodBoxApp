@@ -1,15 +1,13 @@
 
 <%
+	User user = (User) session.getAttribute("current-user");
+if (user == null) {
 
-    User user = (User) session.getAttribute("current-user");
-    if (user == null) {
+	session.setAttribute("message", "You are not logged in !! Login first to access Checkout page");
+	response.sendRedirect("login.jsp");
+	return;
 
-        session.setAttribute("message", "You are not logged in !! Login first to access Checkout page");
-        response.sendRedirect("login.jsp");
-        return;
-
-    }
-
+}
 %>
 
 
@@ -54,7 +52,7 @@
 						<form action="CheckoutOrderedCtl" method="post">
 							<div class="form-group">
 								<label for="exampleInputEmail1"><b>Email Address</b></label> <input
-									name="userEmail" value="<%= user.getUserEmail()%>" type="email"
+									name="userEmail" value="<%=user.getUserEmail()%>" type="email"
 									class="form-control" id="exampleInputEmail1"
 									aria-describedby="emailHelp" placeholder="Enter email">
 								<small id="emailHelp" class="form-text text-muted">We'll
@@ -62,7 +60,7 @@
 							</div>
 							<div class="form-group">
 								<label for="name"><b>Your Name</b></label> <input
-									name="userName" value="<%= user.getUserName()%>" type="text"
+									name="userName" value="<%=user.getUserName()%>" type="text"
 									class="form-control" id="name" aria-describedby="emailHelp"
 									placeholder="Enter name">
 							</div>
@@ -70,7 +68,7 @@
 
 							<div class="form-group">
 								<label for="name"><b>Your Contact</b></label> <input
-									name="userPhone" value="<%= user.getUserPhone() %>" type="text"
+									name="userPhone" value="<%=user.getUserPhone()%>" type="text"
 									class="form-control" id="name" aria-describedby="emailHelp"
 									placeholder="Enter contact number">
 							</div>

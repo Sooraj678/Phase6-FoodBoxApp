@@ -1,3 +1,4 @@
+
 <%
 	User user = (User) session.getAttribute("current-user");
 System.out.println("User Session is :" + user);
@@ -43,7 +44,7 @@ if (user == null) {
 						<div class="card-header bg-secondary text-white mt-3 mb-3">
 							<h4>Pay By Using Debit or Credit Card</h4>
 						</div>
-						<form name="payBill"  method="get" action="invoiceDetail.jsp">
+						<form name="payBill" method="get" action="invoiceDetail.jsp">
 
 
 							<div class="form-group">
@@ -68,26 +69,28 @@ if (user == null) {
 
 							<div class="form-group">
 								<label for="name" style="color: black !important;"><b>Card
-										Holder Name:</b></label> <br>
-										<input name="user_name" type="text" value="<%=user.getUserName()%>"
-									class="form-control" id="name" aria-describedby="nameHelp"
+										Holder Name:</b></label> <br> <input name="user_name" type="text"
+									value="<%=user.getUserName()%>" class="form-control" id="name"
+									aria-describedby="nameHelp"
 									placeholder="Enter Card Holder Name Here..!!">
 							</div>
 							<div class="form-group">
-								<label for="name" style="color: black !important;"><b>Email Id:</b></label> <br>
-										<input name="emailId" type="email" value="<%=user.getUserEmail()%>"
-									class="form-control" id="name" aria-describedby="nameHelp"
+								<label for="name" style="color: black !important;"><b>Email
+										Id:</b></label> <br> <input name="emailId" type="email"
+									value="<%=user.getUserEmail()%>" class="form-control" id="name"
+									aria-describedby="nameHelp"
 									placeholder="Enter Card Holder Name Here..!!">
 							</div>
 
 							<div class="form-group">
-								<label for="phone" style="color: black !important;"><b>Amount to be Paid:</b>
-								</label> <input name="amount" type="number" class="form-control"
-									id="amount" aria-describedby="amountHelp" required>
+								<label for="phone" style="color: black !important;"><b>Amount
+										to be Paid:</b> </label> <input name="amount" type="number"
+									class="form-control" id="amount" aria-describedby="amountHelp"
+									required>
 							</div>
 
 							<div class="container text-center">
-								<input type="submit" name="makePayment" value="Make Payment" >
+								<input type="submit" name="makePayment" value="Make Payment">
 							</div>
 
 
@@ -100,7 +103,7 @@ if (user == null) {
 		</div>
 	</div>
 	<!--For Accessing CheckOut Page from directly Cart only -->
-<%@include  file="components/common_modals.jsp" %>
+	<%@include file="components/common_modals.jsp"%>
 </body>
 
 <%@include file="components/footer.jsp"%>

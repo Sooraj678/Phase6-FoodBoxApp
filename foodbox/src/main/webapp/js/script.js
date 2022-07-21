@@ -5,17 +5,17 @@ function add_to_cart(pid, pname, price) {
 	
 	if(cart == null){
 		
-		//no cart yet
+		// no cart yet
 		let products = [];
 		let product = {productId: pid, productName: pname, productQuantity: 1, productPrice: price}
 		
 		products.push(product);
 		localStorage.setItem("cart", JSON.stringify(products));
-		//console.log("Product is added for the first time");
+		// console.log("Product is added for the first time");
 		showToast("Item is added to cart")
 		
 	}else{
-		//cart is already present 
+		// cart is already present
 		
 		let pcart = JSON.parse(cart);
 		
@@ -24,7 +24,7 @@ function add_to_cart(pid, pname, price) {
 		
 		if (oldProduct) {
 			
-			//Here We have to increase the quantity only
+			// Here We have to increase the quantity only
 			oldProduct.productQuantity = oldProduct.productQuantity+1;
 			pcart.map((item) => {
 
@@ -41,7 +41,7 @@ function add_to_cart(pid, pname, price) {
 			
 		} else {
 
-			//Here we have to add the product
+			// Here we have to add the product
 			let product = {productId: pid, productName: pname, productQuantity: 1, productPrice: price}
 			
 			pcart.push(product);
@@ -57,7 +57,7 @@ function add_to_cart(pid, pname, price) {
 }
 
 
-//Updating Cart:
+// Updating Cart:
 
 function updateCart() {
 		
@@ -73,7 +73,7 @@ function updateCart() {
     } else{
     	
 
-        //there is something in cart to show
+        // there is something in cart to show
         console.log(cart);
         $(".cart-items").html(`( ${cart.length} )`);
         let table = `
@@ -127,7 +127,7 @@ function updateCart() {
         
 }
 
-//delete item from cart
+// delete item from cart
 function deleteItemFromCart(pid)
 {
     let cart = JSON.parse(localStorage.getItem('cart'));

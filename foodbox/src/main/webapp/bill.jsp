@@ -24,11 +24,13 @@ if (user == null) {
 </head>
 <%@include file="components/navbar.jsp"%>
 <body>
-                     <div class="card-header bg-warning text-white mt-3 mb-3">					
-						<h1 style="color: black;"><b>Order Details Are:</b></h1>
-						</div>
+	<div class="card-header bg-warning text-white mt-3 mb-3">
+		<h1 style="color: black;">
+			<b>Order Details Are:</b>
+		</h1>
+	</div>
 	<form action="" method="">
-		
+
 		<div class="row">
 			<%@include file="components/message.jsp"%>
 			<div class="col-md-12">

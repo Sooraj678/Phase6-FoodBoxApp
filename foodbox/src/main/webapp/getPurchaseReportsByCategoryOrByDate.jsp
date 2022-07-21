@@ -22,17 +22,17 @@
 				<table class="table table-bordered">
 					<thead>
 						<tr>
-									<th scope="col">PurchaseId</th>
-									<th scope="col">User</th>
-									<th scope="col">Email</th>
-									<th scope="col">Phone</th>
-									<th scope="col">Address</th>
-									<th scope="col">Date</th>
-									<th scope="col">Category</th>
-									<th scope="col">Status</th>
-									<th scope="col">Mode</th>
-									<th scope="col">Amount</th>
-									<th scope="col">Days</th>
+							<th scope="col">PurchaseId</th>
+							<th scope="col">User</th>
+							<th scope="col">Email</th>
+							<th scope="col">Phone</th>
+							<th scope="col">Address</th>
+							<th scope="col">Date</th>
+							<th scope="col">Category</th>
+							<th scope="col">Status</th>
+							<th scope="col">Mode</th>
+							<th scope="col">Amount</th>
+							<th scope="col">Days</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -53,17 +53,17 @@
 
 
 						<tr>
-									<td class="table-info"><%=rs.getString(1)%></td>
-									<td class="table-info"><%=rs.getString(2)%></td>
-									<td class="table-info"><%=rs.getString(3)%></td>
-									<td class="table-info"><%=rs.getString(4)%></td>
-									<td class="table-info"><%=rs.getString(5)%></td>
-									<td class="table-info"><%=rs.getString(6)%></td>
-									<td class="table-info"><%=rs.getString(7)%></td>
-									<td class="table-info"><%=rs.getString(8)%></td>
-									<td class="table-info"><%=rs.getString(9)%></td>
-									<td class="table-info"><%=rs.getString(10)%></td>
-									<td class="table-info"><%=rs.getString(11)%></td>
+							<td class="table-info"><%=rs.getString(1)%></td>
+							<td class="table-info"><%=rs.getString(2)%></td>
+							<td class="table-info"><%=rs.getString(3)%></td>
+							<td class="table-info"><%=rs.getString(4)%></td>
+							<td class="table-info"><%=rs.getString(5)%></td>
+							<td class="table-info"><%=rs.getString(6)%></td>
+							<td class="table-info"><%=rs.getString(7)%></td>
+							<td class="table-info"><%=rs.getString(8)%></td>
+							<td class="table-info"><%=rs.getString(9)%></td>
+							<td class="table-info"><%=rs.getString(10)%></td>
+							<td class="table-info"><%=rs.getString(11)%></td>
 						</tr>
 
 						<%

@@ -81,8 +81,8 @@
 		return;
 	}
 	%>
-	<a href="admin.jsp" class="text-center d-block mb-2"><b>
-			Admin Panel</b></a>
+	<a href="admin.jsp" class="text-center d-block mb-2"><b> Admin
+			Panel</b></a>
 	<!--For Accessing CheckOut Page from directly Cart only -->
 	<%@include file="components/common_modals.jsp"%>
 
