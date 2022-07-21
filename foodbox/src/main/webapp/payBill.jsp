@@ -60,7 +60,7 @@ if (user == null) {
 							</div>
 							<div class="form-group">
 								<label for="phone" style="color: black !important;"><b>CVV
-										Number:</b></label> <input name="CVV" type="number" class="form-control"
+										Number:</b></label> <input name="CVV" type="password" class="form-control"
 									id="CVVNumber" aria-describedby="CVVHelp"
 									placeholder="Enter your CVV Number Here..!!" required>
 							</div>

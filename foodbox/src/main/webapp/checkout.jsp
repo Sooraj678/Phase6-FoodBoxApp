@@ -99,6 +99,7 @@
 									<option value="Chinese">Chinese</option>
 									<option value="Indian Roti">Indian Roti</option>
 									<option value="Rice">Rice</option>
+									<option value="Soup">Soup</option>
 								</select>
 							</div>
 
