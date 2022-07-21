@@ -30,6 +30,7 @@ if (user == null) {
 <body>
 	<div class="about-section">
 		<div class="inner-width">
+		<%@include file="components/message.jsp" %>
 			<h1 style="color: black !important">
 				<b>Payment Page</b>
 			</h1>
@@ -40,10 +41,6 @@ if (user == null) {
 						<p>
 							<b><h1 style="color: blue;">Your Payment Got successful</h1></b>
 						</p>
-						<p>
-							<b><h4 style="color: red;">Please Remove Selected Items
-									From Cart...!!</h4></b>
-						</p>
 
 						<a href="index.jsp" style="color: blue;"><b>For online
 								Food Delivery Please visit here...!!</b></a>
@@ -53,7 +50,7 @@ if (user == null) {
 		</div>
 	</div>
 	<div class="container">
-		<div class="card-header bg-secondary text-white">
+		<div class="card-header bg-warning text-white">
 			<h1>Your Orders ...!!</h1>
 		</div>
 
@@ -119,7 +116,7 @@ if (user == null) {
 
 
 	<div class="container">
-		<div class="card-header bg-info text-white">
+		<div class="card-header bg-warning text-white">
 			<a href="DeleteOrdersCtl?userEmail=<%=user.getUserEmail()%>">
 				<h4>
 					<b style="color: white;">Click Here to Clear Your Orders </b>
