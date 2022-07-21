@@ -59,7 +59,7 @@
 				for(Category c: clist){		
 			%>
 			
-			<a href="index.jsp?category=<%=c.getCategoryId()%>" class="list-group-item list-group-item-action"><%=c.getCategoryTitle() %></a>
+			<a href="index.jsp?category=<%=c.getCategoryId()%>" class="list-group-item list-group-item-action"><h5 style="color:#01579b"><%=c.getCategoryTitle() %></h5></a>
 			
 			<%
 				}
