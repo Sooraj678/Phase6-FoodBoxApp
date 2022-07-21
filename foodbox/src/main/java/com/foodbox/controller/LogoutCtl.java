@@ -10,26 +10,26 @@ import javax.servlet.http.HttpSession;
 public class LogoutCtl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public LogoutCtl() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+	public LogoutCtl() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		//Performing Logout operation
-		
-		HttpSession httpSession =  request.getSession();
+		// response.getWriter().append("Served at: ").append(request.getContextPath());
+		// Performing Logout operation
+
+		HttpSession httpSession = request.getSession();
 		httpSession.removeAttribute("current-user");
-		
+
 		response.sendRedirect("login.jsp");
 	}
 
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO  Auto-generated method stub
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
